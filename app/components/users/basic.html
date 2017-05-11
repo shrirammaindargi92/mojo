@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="styles/scss/main/tab.css">
+
+<div ng-controller="BasicController as ctrl">
+
+<div id="main" ng-init= "ctrl.openPopup()">
+    <div id="first">
+        <form action="" method="post" name="basicForm">
+            <h1>Basic</h1>
+            <h4>Please fill all entries.</h4>
+            <div class="row form-group">
+                <div>
+                <label>Title :</label>
+                <input name="title" placeholder="Initiative Title" ng-model="ctrl.basicInfo.title" type="text" class="form-control" required>
+                </div>
+                <div>
+                        <label>Description :</label>
+                    <textarea name="desc" type = "text" placeholder="Initiative Description" rows="5" cols="10" ng-model="ctrl.basicInfo.desc" class="form-control" required>
+                </div>
+            </div>
+            </textarea>
+            <input name="next" type="submit" value="Next" class="form-control" ng-click="ctrl.gotoNextTab()" ng-disabled = "basicForm.$invalid">
+        </form>
+    </div>
+</div>
+
+</div>
+  
+
