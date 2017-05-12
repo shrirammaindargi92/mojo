@@ -4,69 +4,43 @@
 
         <div class="container-fluid dashboardRow">
             <div class="row">
-                <!--<div class="table-responsive app-dashboard">
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th st-sort="id">Sr No.</th>
-                                <th st-sort="title">Title</th>
-                                <th st-sort="desc">Description</th>
-                                <th>Image of the initiative</th>
-                                <th st-sort="noOfUsersFollowing">No. of users following </th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tbody ng-show="!ctrl.isLoading">
-                                <tr ng-repeat="row in ctrl.displayed" class="center">
-                                    <td>{{row.id}}</td>
-                                    <td>{{row.title}}</td>
-                                    <td> {{row.desc}}</td>
-                                    <td><a class="hand-pointer" ng-click="ctrl.openPopup(row.img)">Initiative Image</a></td>
-                                    <td><a class="hand-pointer">{{row.img}}</a></td>
-                                    <td>{{row.noOfUsersFollowing}}</td>
-                                    <td><button ng-class="row.status=='Follow' ? 'hand-pointer btn btn-success btn-xs' : 'hand-pointer btn btn-warning btn-xs'" ng-click="ctrl.followInitiative(row.id)">{{row.status}}</button></td>
-                                </tr>
-                            </tbody>
-                            <tbody ng-show="ctrl.isLoading">
-                                <tr>
-                                    <td colspan="9" class="text-center">Loading ...
-                                    </td>
-                                </tr>
-                            </tbody>
-                            <tbody ng-show="ctrl.noRecords">
-                                <tr>
-                                    <td colspan="9" class="text-center">No records to show
-                                    </td>
-                                </tr>
-                            </tbody>
-                    </table>
-                </div>-->
-                <uib-accordion close-others="true">
-    <div uib-accordion-group class="panel-danger" is-open="$first" ng-repeat="row in ctrl.displayed">
+               <!--//ui-Accordion-->
+                
+                <div uib-accordion-group class="panel-success" is-open="false" style="margin-bottom:30px;">
       <uib-accordion-heading>
-        {{row.title}}<span class="caret"></span> <i class="pull-right glyphicon" ng-class="{'glyphicon glyphicon-collapse-up': status.open, 'glyphicon glyphicon-collapse-down': !status.open}"></i>
+        <strong>Name of the Initiative</strong> <strong><lable class="pull-right"  style="margin:0 150px 0 0">Ststus</ilable></strong>
+      </uib-accordion-heading>
+    </div>
+                
+                
+                
+                <uib-accordion close-others="true">
+    <div uib-accordion-group class="panel-default" is-open="$first" ng-repeat="row in ctrl.displayed">
+      <uib-accordion-heading>
+        {{row.title}}<!--<span class="caret"></span> <i class="pull-right glyphicon" ng-class="{'glyphicon glyphicon-collapse-up': status.open, 'glyphicon glyphicon-collapse-down': !status.open}"></i>-->
+          <div class="pull-right">
+          <button  ng-class="row.status=='Follow' ? 'hand-pointer btn btn-success btn-xs' : 'hand-pointer btn btn-danger btn-xs'" style="margin:0 90px 0 0" ng-click="ctrl.followInitiative(row.id)">{{row.status}}</button>
+           <i class="pull-right glyphicon" style="margin:0 20px 0 20px" ng-class="{'glyphicon glyphicon-collapse-up': ctrl.status.open, 'glyphicon glyphicon-collapse-down': !ctrl.status.open}"></i>
+         </div>
       </uib-accordion-heading>
                 <table class="table table-striped">
                         <thead>
                             <tr>
-                                <th >Sr No.</th>
                                 <th >Title</th>
                                 <th >Description</th>
                                 <th>Image of the initiative</th>
                                 <th >No. of users following </th>
-                                <th>Action</th>
+                               <!-- <th>Action</th>-->
                             </tr>
                         </thead>
                             <tbody >
                                 <tr class="center">
-                                    <td>{{row.id}}</td>
                                     <td>{{row.title}}</td>
                                     <td> {{row.desc}}</td>
                                     <td><img ng-src={{row.img}}></td>
                                     <!--<td><a class="hand-pointer">{{row.img}}</a></td>-->
                                     <td>{{row.noOfUsersFollowing}}</td>
-                                    <td><button ng-class="row.status=='Follow' ? 'hand-pointer btn btn-success btn-xs' : 'hand-pointer btn btn-danger btn-xs'" ng-click="ctrl.followInitiative(row.id)">{{row.status}}</button></td>
+                                    <!--<td><button ng-class="row.status=='Follow' ? 'hand-pointer btn btn-success btn-xs' : 'hand-pointer btn btn-danger btn-xs'" ng-click="ctrl.followInitiative(row.id)">{{row.status}}</button></td>-->
                                 </tr>
                             </tbody>
                            

@@ -12,7 +12,7 @@
         var myInitiativesCtrl = this;
         myInitiativesCtrl.displayed = [];
         myInitiativesCtrl.status={
-                open:false;
+                open:false
         };
         myInitiativesCtrl.callServer = function (tableState) {
             myInitiativesCtrl.stState = tableState;

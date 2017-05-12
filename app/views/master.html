@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="styles/css/main.min.css">
 <header ng-controller="MainController as MainCtrl">
     <div class="navbar primary-nav" ng-init="navbarCollapsed=false">
-        <div class="container-fluid">
+        <div class="container-fluid" style="mragin-top:-500px;">
             <div class="navbar-header row">
                 <div class="navbar-header">
                   <a class="navbar-brand" href="#">
@@ -42,12 +42,7 @@
                         </span>
                     </div>
                     <!-- /.user-info -->
-                </div>
-                <!-- /.primary-seperate -->
-                <!--
-                    <div class="clearfix hidden-xs"></div> /.clearfix hidden-xs
--->
-                <div class="secondary-nav clearfix">
+                    <div class="secondary-nav clearfix">
                     <ul class="nav navbar-nav navbar-default">
                         <li ui-sref-active="active" ng-show="MainCtrl.user.role=='user'">
                             <a ui-sref="App.UsersInitiative">Initiatives</a>
@@ -62,7 +57,13 @@
                             <a ui-sref="App.Users">Users</a>
                         </li>
                     </ul>
+                </div>  
                 </div>
+                <!-- /.primary-seperate -->
+                <!--
+                    <div class="clearfix hidden-xs"></div> /.clearfix hidden-xs
+-->
+                
                 <!-- /.nav secondary-nav -->
             </div>
             <!-- /#menu -->
@@ -71,27 +72,20 @@
     </div>
     <!-- /.navbar -->
 </header>
-<div ui-view>
- 
-</div>
+<div ui-view></div>
 
 <footer>
-    <div class="container-fluid">
-        <p>
-            <a href="">&copy; 2017 www.userinitiatives.com</a>
-        </p>
-        <div >
-            
-                <a class="icons-sm fb-ic"><i class="fa fa-facebook"> </i></a>
-                <a class="icons-sm fb-ic"><i class="fa fa-facebook"> </i></a>
-                <!--Twitter-->
-                <a class="icons-sm tw-ic"><i class="fa fa-twitter"> </i></a>
-                <!--Google +-->
-                <a class="icons-sm gplus-ic"><i class="fa fa-google-plus"> </i></a>
-                <!--Linkedin-->
-                <a class="icons-sm li-ic"><i class="fa fa-linkedin"> </i></a>
-        
-        
-        </div>
+    <div class="container-fluid" >
+               <lable><a href="">&copy; 2017 www.initiativetracker.com</a></lable>
+            <div class="pull-right">
+
+                    <a class="icons-sm fb-ic"  href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square fa-3x social"> </i></a>
+                    
+                    <a class="icons-sm tw-ic" href="https://twitter.com" target="_blank"><i class="fa fa-twitter-square fa-3x social"> </i></a>
+                   
+                    <a class="icons-sm gplus-ic" href="https://plus.google.com" target="_blank"><i class="fa fa-google-plus-square fa-3x social"> </i></a>
+                   
+                    <a class="icons-sm li-ic"  href="mailto:bootsnipp@gmail.com" target="_blank"><i class="fa fa-envelope-square fa-3x social"> </i></a>
+           </div>
     </div>
 </footer>

@@ -14,10 +14,24 @@
     
    <!-- UI-Accordion-->
     
-    <uib-accordion close-others="true">
+    <div uib-accordion-group class="panel-success" is-open="false" style="margin-bottom:30px;">
+      <uib-accordion-heading>
+        <strong>Name of the Initiative</strong> <strong><lable class="pull-right"  style="margin:0 150px 0 0">Action</ilable></strong>
+      </uib-accordion-heading>
+    </div>
+        
+        
+        
+        <uib-accordion close-others="true" style="margin-top:10px;">
     <div uib-accordion-group class="panel-default" is-open="$first" ng-repeat="row in ctrl.displayed">
       <uib-accordion-heading>
-        {{row.title}}<span class="caret"></span> <i class="pull-right glyphicon" ng-class="{'glyphicon glyphicon-collapse-up': ctrl.status.open, 'glyphicon glyphicon-collapse-down': !ctrl.status.open}"></i>
+                {{row.title}}
+               <!--   <span class="caret"></span>-->
+          <div class="pull-right">
+          <button  ng-class="row.status=='Follow' ? 'hand-pointer btn btn-success btn-xs' : 'hand-pointer btn btn-danger btn-xs'" style="margin:0 90px 0 0" ng-click="ctrl.followInitiative(row.id)">{{row.isDeleted}}</button>
+           <i class="pull-right glyphicon" style="margin:0 20px 0 20px" ng-class="{'glyphicon glyphicon-collapse-up': ctrl.status.open, 'glyphicon glyphicon-collapse-down': !ctrl.status.open}"></i>
+         </div>
+         
       </uib-accordion-heading>
                 <table class="table table-striped">
                         <thead>
@@ -27,7 +41,7 @@
                                 <th >Description</th>
                                 <th>Image of the initiative</th>
                                 <th >No. of users following </th>
-                                <th>Action</th>
+                                <!--<th>Action</th>-->
                             </tr>
                         </thead>
                             <tbody >
@@ -38,7 +52,7 @@
                                     <td><img ng-src={{row.img}}></td>
                                     <!--<td><a class="hand-pointer">{{row.img}}</a></td>-->
                                     <td>{{row.noOfUsersFollowing}}</td>
-                                    <td><button ng-class="row.status=='Follow' ? 'hand-pointer btn btn-success btn-xs' : 'hand-pointer btn btn-danger btn-xs'" ng-click="ctrl.followInitiative(row.id)">{{row.isDeleted}}</button></td>
+                                   <!-- <td><button ng-class="row.status=='Follow' ? 'hand-pointer btn btn-success btn-xs' : 'hand-pointer btn btn-danger btn-xs'" ng-click="ctrl.followInitiative(row.id)">{{row.isDeleted}}</button></td>-->
                                 </tr>
                             </tbody>
                            

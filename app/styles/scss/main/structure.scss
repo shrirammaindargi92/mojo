@@ -21,7 +21,7 @@
 
     .container-fluid {
         & {
-            padding-top: 5px;
+            padding-top: -100px;
         }
     }
 
@@ -130,7 +130,7 @@
 
 .secondary-nav {
     & {
-        background-color: $secondary-nav-bgc;
+        background-color: $brand-primary;
         font-weight: bold;
     }
 
@@ -146,15 +146,15 @@
         background-color: $brand-primary;
         color: white;
         @include hover-state {
-            background-color: $brand-primary;
+            background-color: white;
             color: darken(white,20%);
         }
     }
     @include mobile {
-        background-color: transparent;
+        background-color: $brand-primary;
 
         li > a {
-            background-color: $secondary-nav-bgc;
+            background-color:$brand-primary;
             text-align: center;
         }
 
@@ -166,7 +166,7 @@
         margin-left: -30px;
         margin-right: -30px;
         margin-top: 10px;
-        background-color: $secondary-nav-bgc;
+        background-color: #b2dba1;
 
         li > a {
             text-decoration: none;
@@ -176,8 +176,8 @@
 }
 
 .sub-nav {
-    & {
-        background-color: $brand-primary;
+    & { text-align-last: center;
+        background-color: linear-gradient(to bottom,#22abe9 5%,#36caf0 100%);
         margin-left: 0;
         margin-right: 0;
         font-weight: bold;
@@ -186,13 +186,13 @@
     li {
 
         &.active {
-            background-color: inherit;
+            background-color: $brand-primary;
             @include active-arrow;
 
             a {
                 color: white;
                 @include hover-state {
-                    color: darken( white,20%);
+                    color: darken( $brand-primary,20%);
                 }
             }
         }
@@ -200,7 +200,7 @@
         a {
           color: lighten($font-label,20%);
             @include hover-state {
-                background-color: $brand-primary;
+                background-color: white;
                 color: $font-label;
             }
 
@@ -230,22 +230,21 @@
 
 footer {
     & {
-        background-color: $brand-primary;
+        background-color:#b2dba1;
         height: 50px;
-     position: relative;
+        position: relative;
         left: 0;
         right: 0;
         bottom: 0;
     }
 
     p {
-        padding-top: 15px;
-        padding-bottom: 15px;
-        margin-bottom: 0;
+        margin-top:60px;
 
         a {
-            color: lighten( $font-label,20%);
+            color:white;
             @include hover-state {
+                background-color: white;
                 color: $font-label;
             }
         }

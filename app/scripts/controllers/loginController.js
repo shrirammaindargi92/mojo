@@ -17,12 +17,10 @@
             self.isSigningIn = true;
             self.loginFailed = false;
             self.blockedUser = false;
-            libFactory.progressBar.start();
+            
             authenticationFactory.login(self.credentials.username, self.credentials.password).then(function success(response) {
                 self.isSigningIn = false;
                 self.user = authTokenFactory.getUserDetails();
-                debugger
-                libFactory.progressBar.complete();
                 if (self.user.role == 'user') {
                     debugger
                     $state.go("App.UsersInitiative");
