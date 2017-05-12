@@ -130,31 +130,31 @@
 
 .secondary-nav {
     & {
-        background-color: $brand-primary;
+        background-color: #b2dba1;
         font-weight: bold;
     }
 
     li > a {
         color: $font-default;
         @include hover-state {
-            color: darken( $font-default,20%);
+            color: darken( blue,20%);
         }
     }
 
-
+//hover color
     .active > a {
-        background-color: $brand-primary;
+        background-color: blue;
         color: white;
         @include hover-state {
-            background-color: white;
+            background-color: a {;
             color: darken(white,20%);
         }
     }
     @include mobile {
-        background-color: $brand-primary;
+        background-color: #b2dba1;
 
         li > a {
-            background-color:$brand-primary;
+            background-color:#b2dba1;
             text-align: center;
         }
 
@@ -186,13 +186,13 @@
     li {
 
         &.active {
-            background-color: $brand-primary;
+            background-color:#b2dba1;
             @include active-arrow;
 
             a {
                 color: white;
                 @include hover-state {
-                    color: darken( $brand-primary,20%);
+                    color: darken( #b2dba1,20%);
                 }
             }
         }
@@ -200,7 +200,7 @@
         a {
           color: lighten($font-label,20%);
             @include hover-state {
-                background-color: white;
+                background-color: #b2dba1;
                 color: $font-label;
             }
 
@@ -244,7 +244,7 @@ footer {
         a {
             color:white;
             @include hover-state {
-                background-color: white;
+                background-color: #b2dba1;
                 color: $font-label;
             }
         }

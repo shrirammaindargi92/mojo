@@ -1,0 +1,35 @@
+/*
+Error: Invalid CSS after "}": expected "}", was ""
+        on line 262 of app/styles/scss/main/structure.scss
+
+257: }
+258: 
+259: body {
+260:     margin-bottom: -50px;
+261: }
+
+Backtrace:
+app/styles/scss/main/structure.scss:262
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.4.23/lib/sass/scss/parser.rb:1209:in `expected'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.4.23/lib/sass/scss/parser.rb:1137:in `expected'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.4.23/lib/sass/scss/parser.rb:1132:in `tok!'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.4.23/lib/sass/scss/parser.rb:667:in `block'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.4.23/lib/sass/scss/parser.rb:660:in `ruleset'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.4.23/lib/sass/scss/parser.rb:684:in `block_child'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.4.23/lib/sass/scss/parser.rb:125:in `stylesheet'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.4.23/lib/sass/scss/parser.rb:41:in `parse'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.4.23/lib/sass/engine.rb:406:in `_to_tree'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.4.23/lib/sass/engine.rb:281:in `render'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:400:in `run'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.4.23/bin/sass:13:in `<top (required)>'
+C:/Ruby192/bin/sass:19:in `load'
+C:/Ruby192/bin/sass:19:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"}\": expected \"}\", was \"\"\A         on line 262 of app/styles/scss/main/structure.scss\A \A 257: }\A 258: \A 259: body {\A 260:     margin-bottom: -50px;\A 261: }"; }

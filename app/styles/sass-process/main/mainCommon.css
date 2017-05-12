@@ -1,0 +1,177 @@
+.required-red-star:after {
+  content: "*";
+  color: red;
+}
+
+.ng-cloak,
+.x-ng-cloak,
+[data-ng-cloak],
+[ng-cloak],
+[ng\:cloak],
+[x-ng-cloak] {
+  display: none !important;
+}
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+label {
+  color: #868686;
+}
+
+.form-control {
+  color: #333333;
+}
+
+.label-normal-color {
+  color: #333333;
+}
+
+.panel-group .panel,
+.panel-heading {
+  border-radius: 0;
+}
+
+.text-wrap-normal {
+  white-space: normal !important;
+}
+
+.btn-cancel {
+  background-color: #868686 !important;
+  color: white;
+}
+
+.has-error .checkbox, .has-error .checkbox-inline, .has-error .control-label, .has-error .form-control-feedback, .has-error .help-block, .has-error .radio, .has-error .radio-inline, .has-error.checkbox label, .has-error.checkbox-inline label, .has-error.radio label, .has-error.radio-inline label {
+  color: red;
+}
+
+#mainPage .btn,
+#mainPage input,
+#mainPage select {
+  border-radius: 0;
+}
+#mainPage input,
+#mainPage select {
+  border-color: #d3d3d3;
+  box-shadow: none;
+}
+#mainPage input:active, #mainPage input:focus, #mainPage input:hover,
+#mainPage select:active,
+#mainPage select:focus,
+#mainPage select:hover {
+  border-color: #d3d3d3;
+  box-shadow: none;
+  outline-color: #d3d3d3;
+}
+#mainPage .cursorPointer {
+  cursor: pointer;
+}
+#mainPage .headerText {
+  font-weight: 100;
+}
+#mainPage .user-name-container {
+  text-transform: capitalize;
+}
+#mainPage .navRibbon {
+  border-top: 5px solid #194E90;
+}
+#mainPage .commonSearchContainer .searchInput {
+  border-right-width: 0;
+  line-height: 1.5;
+}
+#mainPage .commonSearchContainer .primary-search-select-addon {
+  width: 23%;
+  padding: 0px;
+  background-color: #f4f2f3 !important;
+}
+#mainPage .commonSearchContainer .primary-search-select-addon select {
+  box-shadow: none !important;
+  border-color: #f4f2f3;
+  outline: 0 !important;
+  background-color: #f4f2f3 !important;
+}
+#mainPage .commonSearchContainer .primary-search-button-group {
+  width: 1%;
+}
+#mainPage .commonSearchContainer .searchAddon {
+  border-left-width: 0;
+  outline: 0;
+}
+#mainPage .commonSearchContainer .searchAddon:active, #mainPage .commonSearchContainer .searchAddon:focus, #mainPage .commonSearchContainer .searchAddon:hover {
+  background-color: white;
+  border-color: #d3d3d3;
+  box-shadow: none;
+}
+#mainPage .commonSearchContainer .form-group {
+  background-color: #e7e7e7;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#mainPage .commonSearchContainer .clearText {
+  padding: 7px;
+}
+#mainPage .commonSearchContainer .clearText a {
+  cursor: pointer;
+}
+#mainPage .app-dashboard table thead th {
+  background-color: #8b1b3f;
+  color: white;
+}
+#mainPage .app-dashboard .table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+#mainPage .app-dashboard .table {
+  border: 1px solid #e6e6e6;
+  margin-bottom: 0;
+}
+#mainPage .app-dashboard .table tbody > tr > td,
+#mainPage .app-dashboard .table tbody > tr > th,
+#mainPage .app-dashboard .table tfoot > tr > td,
+#mainPage .app-dashboard .table tfoot > tr > th,
+#mainPage .app-dashboard .table thead > tr > td,
+#mainPage .app-dashboard .table thead > tr > th {
+  border: 1px solid #e6e6e6;
+}
+#mainPage .app-dashboard .table thead > tr > th {
+  border-bottom: none;
+  position: relative;
+  cursor: pointer;
+}
+#mainPage .app-dashboard .st-sort-ascent:after {
+  font-family: "Glyphicons Halflings";
+  content: "\e113";
+  color: white;
+  padding-right: 5px;
+  position: absolute;
+  right: 0;
+}
+#mainPage .app-dashboard .st-sort-descent:after {
+  font-family: "Glyphicons Halflings";
+  content: "\e114";
+  color: white;
+  padding-right: 5px;
+  position: absolute;
+  right: 0;
+}
+#mainPage .app-dashboard-pagination {
+  background-color: #a1a1a1;
+  color: white;
+}
+#mainPage .app-dashboard-pagination .paginationItems {
+  text-align: right;
+}
+@media screen and (max-width: 767px) {
+  #mainPage .app-dashboard-pagination .paginationItems {
+    text-align: center;
+  }
+}

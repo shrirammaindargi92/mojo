@@ -1,0 +1,371 @@
+.required-red-star:after {
+  content: "*";
+  color: red;
+}
+
+.ng-cloak,
+.x-ng-cloak,
+[data-ng-cloak],
+[ng-cloak],
+[ng\:cloak],
+[x-ng-cloak] {
+  display: none !important;
+}
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+label {
+  color: #868686;
+}
+
+.form-control {
+  color: #333333;
+}
+
+.label-normal-color {
+  color: #333333;
+}
+
+.panel-group .panel,
+.panel-heading {
+  border-radius: 0;
+}
+
+.text-wrap-normal {
+  white-space: normal !important;
+}
+
+.btn-cancel {
+  background-color: #868686 !important;
+  color: white;
+}
+
+.has-error .checkbox, .has-error .checkbox-inline, .has-error .control-label, .has-error .form-control-feedback, .has-error .help-block, .has-error .radio, .has-error .radio-inline, .has-error.checkbox label, .has-error.checkbox-inline label, .has-error.radio label, .has-error.radio-inline label {
+  color: red;
+}
+
+#mainPage .btn,
+#mainPage input,
+#mainPage select {
+  border-radius: 0;
+}
+#mainPage input,
+#mainPage select {
+  border-color: #d3d3d3;
+  box-shadow: none;
+}
+#mainPage input:active, #mainPage input:focus, #mainPage input:hover,
+#mainPage select:active,
+#mainPage select:focus,
+#mainPage select:hover {
+  border-color: #d3d3d3;
+  box-shadow: none;
+  outline-color: #d3d3d3;
+}
+#mainPage .cursorPointer {
+  cursor: pointer;
+}
+#mainPage .headerText {
+  font-weight: 100;
+}
+#mainPage .user-name-container {
+  text-transform: capitalize;
+}
+#mainPage .navRibbon {
+  border-top: 5px solid #194E90;
+}
+#mainPage .commonSearchContainer .searchInput {
+  border-right-width: 0;
+  line-height: 1.5;
+}
+#mainPage .commonSearchContainer .primary-search-select-addon {
+  width: 23%;
+  padding: 0px;
+  background-color: #f4f2f3 !important;
+}
+#mainPage .commonSearchContainer .primary-search-select-addon select {
+  box-shadow: none !important;
+  border-color: #f4f2f3;
+  outline: 0 !important;
+  background-color: #f4f2f3 !important;
+}
+#mainPage .commonSearchContainer .primary-search-button-group {
+  width: 1%;
+}
+#mainPage .commonSearchContainer .searchAddon {
+  border-left-width: 0;
+  outline: 0;
+}
+#mainPage .commonSearchContainer .searchAddon:active, #mainPage .commonSearchContainer .searchAddon:focus, #mainPage .commonSearchContainer .searchAddon:hover {
+  background-color: white;
+  border-color: #d3d3d3;
+  box-shadow: none;
+}
+#mainPage .commonSearchContainer .form-group {
+  background-color: #e7e7e7;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#mainPage .commonSearchContainer .clearText {
+  padding: 7px;
+}
+#mainPage .commonSearchContainer .clearText a {
+  cursor: pointer;
+}
+#mainPage .app-dashboard table thead th {
+  background-color: #8b1b3f;
+  color: white;
+}
+#mainPage .app-dashboard .table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+#mainPage .app-dashboard .table {
+  border: 1px solid #e6e6e6;
+  margin-bottom: 0;
+}
+#mainPage .app-dashboard .table tbody > tr > td,
+#mainPage .app-dashboard .table tbody > tr > th,
+#mainPage .app-dashboard .table tfoot > tr > td,
+#mainPage .app-dashboard .table tfoot > tr > th,
+#mainPage .app-dashboard .table thead > tr > td,
+#mainPage .app-dashboard .table thead > tr > th {
+  border: 1px solid #e6e6e6;
+}
+#mainPage .app-dashboard .table thead > tr > th {
+  border-bottom: none;
+  position: relative;
+  cursor: pointer;
+}
+#mainPage .app-dashboard .st-sort-ascent:after {
+  font-family: "Glyphicons Halflings";
+  content: "\e113";
+  color: white;
+  padding-right: 5px;
+  position: absolute;
+  right: 0;
+}
+#mainPage .app-dashboard .st-sort-descent:after {
+  font-family: "Glyphicons Halflings";
+  content: "\e114";
+  color: white;
+  padding-right: 5px;
+  position: absolute;
+  right: 0;
+}
+#mainPage .app-dashboard-pagination {
+  background-color: #a1a1a1;
+  color: white;
+}
+#mainPage .app-dashboard-pagination .paginationItems {
+  text-align: right;
+}
+@media screen and (max-width: 767px) {
+  #mainPage .app-dashboard-pagination .paginationItems {
+    text-align: center;
+  }
+}
+
+#main-dashboard {
+  margin-bottom: 30px;
+}
+#main-dashboard .hand-pointer {
+  cursor: pointer;
+}
+#main-dashboard .header {
+  margin-bottom: 15px;
+}
+#main-dashboard .header h1 {
+  font-weight: 100;
+}
+@media screen and (max-width: 767px) {
+  #main-dashboard .header h1 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  #main-dashboard .header .order-test {
+    float: none;
+  }
+}
+#main-dashboard .header .order-test button {
+  margin-top: 15px;
+  float: right;
+}
+@media screen and (max-width: 767px) {
+  #main-dashboard .header .order-test button {
+    width: 100%;
+    float: none;
+    margin-top: 0;
+  }
+}
+#main-dashboard .dashboardRow {
+  margin-top: 25px;
+}
+#main-dashboard .tooltip-inner {
+  max-width: 400px;
+  background-color: #194E90;
+}
+#main-dashboard .dasboard-data-indicator {
+  background-color: #194E90;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  #main-dashboard .dasboard-data-indicator {
+    margin-bottom: 30px;
+  }
+}
+#main-dashboard .dasboard-data-indicator .active.dashboard-item {
+  background-color: #0a1f39;
+  position: relative;
+}
+#main-dashboard .dasboard-data-indicator .active .dashboard-badge .dashboard-badge-number {
+  background-color: black;
+}
+@media screen and (min-width: 992px) {
+  #main-dashboard .dasboard-data-indicator .active:after {
+    content: "";
+    height: 0;
+    width: 0;
+    border-width: 20px;
+    border-color: transparent;
+    border-style: solid;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-bottom-width: 0;
+    border-top-color: #0a1f39;
+  }
+}
+@media screen and (max-width: 991px) {
+  #main-dashboard .dasboard-data-indicator .active:after {
+    content: "";
+    height: 0;
+    width: 0;
+    border-width: 20px;
+    border-color: transparent;
+    border-style: solid;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    border-left-width: 0;
+    border-right-color: white;
+  }
+}
+#main-dashboard .dasboard-data-indicator .dashboard-item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+@media screen and (min-width: 1200px) {
+  #main-dashboard .dasboard-data-indicator .dashboard-item {
+    min-height: 90px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  #main-dashboard .dasboard-data-indicator .dashboard-item {
+    min-height: 115px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #main-dashboard .dasboard-data-indicator .dashboard-item {
+    min-height: 80px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #main-dashboard .dasboard-data-indicator .dashboard-item {
+    min-height: 65px;
+  }
+}
+#main-dashboard .dasboard-data-indicator .dashboard-item:active, #main-dashboard .dasboard-data-indicator .dashboard-item:focus, #main-dashboard .dasboard-data-indicator .dashboard-item:hover {
+  background-color: #113665;
+}
+@media screen and (min-width: 992px) {
+  #main-dashboard .dasboard-data-indicator .dashboard-item {
+    border-right: 2px solid white;
+  }
+  #main-dashboard .dasboard-data-indicator .dashboard-item:last-child {
+    border-right-width: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #main-dashboard .dasboard-data-indicator .dashboard-item:nth-child(2n+1) {
+    border-right: 2px solid white;
+  }
+  #main-dashboard .dasboard-data-indicator .dashboard-item:nth-child(1), #main-dashboard .dasboard-data-indicator .dashboard-item:nth-child(2) {
+    border-bottom: 2px solid white;
+  }
+}
+@media screen and (max-width: 767px) {
+  #main-dashboard .dasboard-data-indicator .dashboard-item {
+    border-bottom: 2px solid white;
+  }
+  #main-dashboard .dasboard-data-indicator .dashboard-item:last-child {
+    border-bottom-width: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #main-dashboard .dasboard-data-indicator .dashboard-label {
+    padding-left: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #main-dashboard .dasboard-data-indicator .dashboard-label {
+    padding-left: 0;
+  }
+}
+#main-dashboard .dasboard-data-indicator .dashboard-label .dashboard-label-text {
+  font-weight: 100;
+  color: white;
+  font-size: 22px;
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  #main-dashboard .dasboard-data-indicator .dashboard-label .dashboard-label-text {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #main-dashboard .dasboard-data-indicator .dashboard-label .dashboard-label-text {
+    font-size: 20px;
+    padding-top: 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #main-dashboard .dasboard-data-indicator .dashboard-label .dashboard-label-text {
+    font-size: 18px;
+  }
+}
+#main-dashboard .dasboard-data-indicator .dashboard-badge .dashboard-badge-number {
+  background-color: #15427a;
+  border-radius: 50%;
+  color: white;
+  font-weight: 900;
+  font-size: 36px;
+  padding: 5px 10px;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #main-dashboard .dasboard-data-indicator .dashboard-badge .dashboard-badge-number {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #main-dashboard .dasboard-data-indicator .dashboard-badge .dashboard-badge-number {
+    font-size: 25px;
+  }
+}
+#main-dashboard .dasboard-data-indicator .dashboard-badge .dashboard-badge-number:active, #main-dashboard .dasboard-data-indicator .dashboard-badge .dashboard-badge-number:focus, #main-dashboard .dasboard-data-indicator .dashboard-badge .dashboard-badge-number:hover {
+  background-color: #194E90;
+}
